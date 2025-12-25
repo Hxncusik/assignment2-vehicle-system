@@ -1,18 +1,19 @@
 package kz.yerkebulan;
 
 public abstract class Vehicle {
-    private String brand;
-    private int year;
+    protected String brand;
+    protected int year;
 
     protected Vehicle(String brand, int year) {
         this.brand = brand;
         this.year = year;
     }
 
-    abstract void startEngine();
-    abstract void stopEngine();
+    public abstract void startEngine();
+    public abstract void stopEngine();
 
-    public void displayInfo(){
-        System.out.println("Vehicle brand: " + brand + ", Year: " + year);
+    public void displayInfo() {
+        System.out.println("Vehicle info:");
+        System.out.println("Brand: " + brand + ", Year: " + year);
     }
 }

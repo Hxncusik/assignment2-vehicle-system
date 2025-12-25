@@ -19,4 +19,9 @@ public class Truck extends Vehicle {
     public void stopEngine() {
         System.out.println("Truck engine stopped.");
     }
+
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Capacity: " + capacity + ", Axles: " + numAxles);
+    }
 }
