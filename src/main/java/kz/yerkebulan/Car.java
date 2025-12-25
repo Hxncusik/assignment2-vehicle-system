@@ -19,4 +19,10 @@ public class Car extends Vehicle {
     public void stopEngine() {
         System.out.println("Car engine stopped.");
     }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Doors: " + doors + ", Fuel type: " + fuelType);
+    }
 }

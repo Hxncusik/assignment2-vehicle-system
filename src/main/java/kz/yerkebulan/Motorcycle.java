@@ -17,4 +17,10 @@ public class Motorcycle extends Vehicle {
     public void stopEngine() {
         System.out.println("Motorcycle engine stopped.");
     }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Has sidecar: " + hasSidecar);
+    }
 }
